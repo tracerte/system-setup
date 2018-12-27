@@ -1,0 +1,16 @@
+* How to Use this Repo
+This repo is a set of literate shell scripts used to provision my computers. Each file is written in org mode with Babel and can run as a script.
+* Tangling The Org Files
+We can generate the file by opening the file in emacs and typing =M-x org-babel-tangle= or using the key combination =C-c C-v t=
+* Table of Contents and Basic Order of Execution
+** [[file:git.org][1. Git]]
+It is very hard to do anything these days without installing and configuring git.
+** [[file:ssh.org][2. SSH]]
+Installing and configuring ssh keys.
+** [[file:mobile-power-management.org][3. Mobile Power Management]]
+Installing =tlp= and other battery saving utilities.
+** [[file:thinkpad.org][4. Thinkpad Specific Software]]
+** [[file:emacs.org][5. Building and Installing Emacs]]
+** [[file:zsh.org][6. Installing ZSH and Oh My ZSH]]
+** [[file:shell-config.org][7. Symlinking .zshrc and .bashrc]]
+

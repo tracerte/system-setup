@@ -7,3 +7,8 @@ Not much can get done nowadays without git installed. Use your package manager t
 #+BEGIN_SRC bash
   sudo apt install git
 #+END_SRC
+* Configure Git
+#+BEGIN_SRC bash
+git config --global user.email "matt@tracerte.com"
+git config --global user.name "Matthew B. Reisch"
+#+END_SRC
