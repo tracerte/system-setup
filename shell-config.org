@@ -12,7 +12,7 @@ Let's pull the repo.
       case $yn in
           Yes ) git clone https://github.com/tracerte/shell-config ~/shell-config;
                 break;;
-          No ) exit;;
+          No ) break;;
       esac
   done
 
@@ -29,7 +29,7 @@ Now we can enter the repo and Start Symlinking
                 fi
                 ln -sfr ./bash/bashrc ~/.bashrc
                 break;;
-          No ) exit;;
+          No ) break;;
       esac
   done
 #+END_SRC
@@ -44,7 +44,7 @@ Now we can enter the repo and Start Symlinking
                 fi
                 ln -sfr ./zsh/zshrc ~/.zshrc
                 break;;
-          No ) exit;;
+          No ) break;;
       esac
   done
 #+END_SRC
