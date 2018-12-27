@@ -13,4 +13,7 @@ Installing =tlp= and other battery saving utilities.
 ** [[file:emacs.org][5. Building and Installing Emacs]]
 ** [[file:zsh.org][6. Installing ZSH and Oh My ZSH]]
 ** [[file:shell-config.org][7. Symlinking .zshrc and .bashrc]]
+** [[file:redshift.org][8. Redshift]]
+Save your eyes from blue light.
+
 

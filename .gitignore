@@ -1,4 +1,4 @@
 # exclude backup files
 *~
-# exclude anything that isn't an org file
-*.sh
+# exclude everything in the generated-scripts folder
+/generated-scripts/
