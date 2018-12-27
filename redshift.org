@@ -4,6 +4,8 @@
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC
+* Introduction
+Redshift is a program that changes your screen temperature based on the time of day. It is supposed to help with your circadian rythm which gets screwed up by blue light.
 * Installing Redshift
 Redshift is a program that changes the color temperature of your screen based on the time of day. Fortunately it is in the repos.
 

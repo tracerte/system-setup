@@ -1,3 +1,5 @@
+* Introduction
+Setting up my SSH directory structure and adding the to the =ssh-agen=
 * Setup SSH Keys
 ** Setup directories
 - Home directory should not be accessible by groups or others: at most =755 (drwxr-xr-x)=

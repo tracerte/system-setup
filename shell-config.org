@@ -2,6 +2,8 @@
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC
+* Introduction
+Like most people, my configuration files are source controlled. Time to install them.
 * Shell Configuration Files
 My shell configuration files are in my =shell-config= git repo.
 

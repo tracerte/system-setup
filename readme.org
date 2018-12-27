@@ -1,7 +1,9 @@
 * How to Use this Repo
-This repo is a set of literate shell scripts used to provision my computers. Each file is written in org mode with Babel and can run as a script.
+This repo is a set of literate shell scripts and some plain old org files used to provision my computers. Each file is written in org mode with Babel and can run as a script.
 * Tangling The Org Files
 We can generate the file by opening the file in emacs and typing =M-x org-babel-tangle= or using the key combination =C-c C-v t=
+* Current Systems
+- Lenovo Thinkpad P50: Ubuntu 18.10 (Cosmic Cuttlefish)
 * Table of Contents and Basic Order of Execution
 ** [[file:git.org][1. Git]]
 It is very hard to do anything these days without installing and configuring git.
@@ -15,5 +17,5 @@ Installing =tlp= and other battery saving utilities.
 ** [[file:shell-config.org][7. Symlinking .zshrc and .bashrc]]
 ** [[file:redshift.org][8. Redshift]]
 Save your eyes from blue light.
-
-
+** [[file:riot-im.org][9. Riot IM]]
+** [[file:brother-dcp-7065dn.org][10. Brother DCP-7065DN]]

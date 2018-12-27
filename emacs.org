@@ -2,6 +2,8 @@
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC
+* Introduction
+Time to install everyone's favorite compute environment. We are installing from source because the Ubuntu repos lag behind the latest and greatest.
 * Install Newest Emacs
 Emacs in most repositories is pretty stale, let's install from source.
 ** Empower Apt to View and Operate on Source Code
