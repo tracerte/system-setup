@@ -1,0 +1,13 @@
+#+PROPERTY: header-args :tangle "./thinkpad.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Install Thinkpad Specific Tooling
+** Power Management
+=acpi-call=: (ThinkPad only) is needed for battery charge thresholds on Sandy Bridge and newer models
+#+BEGIN_SRC bash
+sudo apt install acpi-call
+#+END_SRC
+
+
+

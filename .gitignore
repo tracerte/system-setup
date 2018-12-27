@@ -1,0 +1,4 @@
+# exclude backup files
+*~
+# exclude anything that isn't an org file
+*.sh

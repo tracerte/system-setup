@@ -1,0 +1,21 @@
+#+PROPERTY: header-args :tangle "./power-management.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Power Management
+=tlp=: Advanced power management tool
+=tlp-rdw=: Radio Device Wizard - needed to enable/disable & Power saving (Wifi / Bluetooth )
+=smartmontools=: needed by tlp-stat to display disk drive S.M.A.R.T. data
+=ethtool=: is needed to disable wake on LAN
+=acpi-call=: (ThinkPad only) is needed for battery charge thresholds on Sandy Bridge and newer models
+#+BEGIN_SRC bash
+sudo apt install tlp tlp-rdw acpi-call smartmontools ethtool 
+#+END_SRC
+Now start the service.
+#+BEGIN_SRC bash
+sudo tlp start
+#+END_SRC
+Check Stats, and ensure it's enabled
+#+BEGIN_SRC bash
+ sudo tlp-stat -s
+#+END_SRC

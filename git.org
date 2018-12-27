@@ -1,0 +1,9 @@
+#+PROPERTY: header-args :tangle "./git.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Install Git
+Not much can get done nowadays without git installed. Use your package manager to install if it isn't already installed.
+#+BEGIN_SRC bash
+  sudo apt install git
+#+END_SRC

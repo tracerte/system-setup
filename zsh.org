@@ -1,0 +1,62 @@
+#+PROPERTY: header-args :tangle "./zsh.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Install ZSH
+Zsh is available via =apt=
+#+BEGIN_SRC bash
+echo "Install zsh..."
+sudo apt install zsh
+#+END_SRC
+* Oh My Zsh
+Let's install Oh My Zsh
+
+#+BEGIN_SRC bash
+echo "Cloning Oh My ZSH..."
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+#+END_SRC
+** Powerlines Fonts
+Make our terminal use pretty symbols
+#+BEGIN_SRC bash
+echo "Installing Powerline Fonts..."
+sudo apt install fonts-powerline
+#+END_SRC
+** ZSH Completions
+#+BEGIN_SRC bash
+echo "Installing ZSH Completions..."
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+#+END_SRC
+** ZSH Autosuggestions
+#+BEGIN_SRC bash
+echo "Installing ZSH Autosuggestions..."
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+#+END_SRC
+** Syntax Highlighting
+#+BEGIN_SRC bash
+echo "Installing Syntax Highlighting..."
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+#+END_SRC
+** ZSH-256
+Use all the available terminal colors
+
+#+BEGIN_SRC bash
+echo "Install ZSH-256..."
+git clone https://github.com/chrissicool/zsh-256color ~/.oh-my-zsh/custom/plugins/zsh-256color
+#+END_SRC
+
+** Better Directory Colors
+#+BEGIN_SRC bash
+echo "Install dircolors..."
+wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O ~/.dircolors
+#+END_SRC
+* Dotfiles
+Please see my shell-config repository for the =.zshrc= used.
+
+#+BEGIN_SRC bash
+echo "Please install .zshrc from git repo"
+#+END_SRC
+* Making ZSH Default
+You can change the default shell to zsh using the following command
+#+BEGIN_EXAMPLE
+chsh -s $(which zsh)
+#+END_EXAMPLE
