@@ -1,4 +1,4 @@
-#+PROPERTY: header-args :tangle "./shell-config.sh"
+#+PROPERTY: header-args :tangle "./generated-scripts/shell-config.sh"
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC

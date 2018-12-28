@@ -1,4 +1,4 @@
-#+PROPERTY: header-args :tangle "./zsh.sh"
+#+PROPERTY: header-args :tangle "./generated-scripts/zsh.sh"
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC

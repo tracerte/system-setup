@@ -1,4 +1,4 @@
-#+PROPERTY: header-args :tangle "./power-management.sh"
+#+PROPERTY: header-args :tangle "./generated-scripts/power-management.sh"
 #+BEGIN_SRC bash
 #!/bin/bash
 #+END_SRC

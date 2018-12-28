@@ -1,0 +1,21 @@
+
+#+PROPERTY: header-args :tangle "./generated-scripts/anaconda.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+Anaconda is a data science oriented python distribution. We are going to install it separately from our system python, to keep our system clean.
+* Installation
+#+BEGIN_SRC bash
+  ANACONDA_VERSION=Anaconda3-5.2.0
+  echo "Installing Anaconda"
+  echo "####### Do not allow the installer to prepend anything to your bashrc. Instructions will follow installation. ########"
+
+  curl -o /tmp/anaconda.sh https://repo.anaconda.com/archive/${ANACONDA_VERSION}-Linux-x86_64.sh
+
+  cd /tmp && sh anaconda.sh
+
+  # Hat tip to: http://tobanwiebe.com/blog/2016/09/anaconda-python-linux
+  echo '#######"export PATH="$PATH:/path/to/anaconda3/bin"#######################'
+
+#+END_SRC
