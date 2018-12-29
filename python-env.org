@@ -1,0 +1,33 @@
+#+PROPERTY: header-args :tangle "./generated-scripts/python-env.sh"
+
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+In newer versions of Ubuntu both python3 and python2 are installed. I only really use python3. This org file will go into detail on how to setup a python development environment. I currently use anaconda-mode in emacs, which at the moment, only requires setuptools.
+* Ensure Python3 and Setuptools Installed
+#+BEGIN_SRC bash
+sudo apt install python3 python3-setuptools
+#+END_SRC
+* Ipython
+Who wants a better REPL experience, I do.
+#+BEGIN_SRC bash
+sudo apt install ipython3
+#+END_SRC
+* Userland Packages
+Use virtual environments, whenever possible, do not pollute the global python package namespace.
+* Virtual Environments
+We should have at least Python 3.6 installed. To create a new virtual environment use:
+#+BEGIN_EXAMPLE
+$ python3 -m venv env
+#+END_EXAMPLE
+
+To activate the environment:
+#+BEGIN_EXAMPLE
+$ source env/bin/activate
+#+END_EXAMPLE
+
+To deactivate the environment:
+#+BEGIN_EXAMPLE
+$ (env) $ deactivate
+#+END_EXAMPLE

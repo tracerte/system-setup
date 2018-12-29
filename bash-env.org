@@ -1,0 +1,10 @@
+#+PROPERTY: header-args :tangle "./generated-scripts/bash-env.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+This document lays out the steps to setup a development environment for shell scripting. I use emacs, and like using flycheck, so shellcheck is a needed dependency.
+* Install Shellcheck
+#+BEGIN_SRC bash
+sudo apt install shellcheck
+#+END_SRC

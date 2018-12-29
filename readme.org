@@ -24,5 +24,7 @@ Save your eyes from blue light.
 *** [[file:riot-im.org][4.2 Riot IM]]
 *** [[file:keybase.org][4.3 Keybase]]
 *** [[file:pcloud.org][4.4 pCloud]]
-** Programming
+** 5. Programming Environments
+*** [[file:bash-env.org][5.1 Shell Script]]
+*** [[file:python-env.org][5.2 Python]]
 
