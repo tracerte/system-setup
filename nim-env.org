@@ -1,0 +1,27 @@
+#+PROPERTY: header-args :tangle "./generated-scripts/nim-env.sh"
+
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+Nim is a relatively new programming language with syntax similar to python, macros similar to a lisp and best yet, compiles down to C.
+* Installation
+** Dependencies
+Ensure GCC is installed
+#+BEGIN_SRC bash
+sudo apt install build-essential
+#+END_SRC
+I also want the Clang compiler too, so we can take advantage of LLVM
+#+BEGIN_SRC bash
+sudo apt install clang cmake clang-format libclang-dev
+#+END_SRC
+** Install choosenim
+=choosenim= is a tool similar to =pyenv= which allows you to have multiple versions of nim installed on your computer and switch between them, fairly seamlessly.
+#+BEGIN_SRC bash
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+#+END_SRC
+** Adding nim to your PATH
+Remember to add nim to our path
+#+BEGIN_EXAMPLE
+export PATH=~/.nimble/bin:$PATH
+#+END_EXAMPLE 

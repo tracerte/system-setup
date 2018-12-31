@@ -1,5 +1,3 @@
-
-
 #+PROPERTY: header-args :tangle "./generated-scripts/python-env.sh"
 
 #+BEGIN_SRC bash
@@ -12,6 +10,7 @@ I tend not to depend on the system installed python interepreters. I only really
 #+BEGIN_SRC bash
  sudo apt install -y build-essential libbz2-dev zlib1g-dev libssl-dev libreadline-dev libsqlite3-dev tk-dev libffi-dev
 #+END_SRC
+** Install
 #+BEGIN_SRC bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 #+END_SRC
@@ -19,6 +18,19 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 #+BEGIN_SRC bash
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 #+END_SRC
+* Make Changes to bashrc or zshrc
+Add the following lines to enable pyenv and pyenv-virtualenv
+#+BEGIN_EXAMPLE
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+
+  eval "$(pyenv virtualenv-init -)"
+fi
+#+END_EXAMPLE
 * Python3 and Miniconda Installation
 #+BEGIN_EXAMPLE
 $ pyenv install 3.7.2

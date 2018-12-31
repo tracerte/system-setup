@@ -27,4 +27,5 @@ Save your eyes from blue light.
 ** 5. Programming Environments
 *** [[file:bash-env.org][5.1 Shell Script]]
 *** [[file:python-env.org][5.2 Python]]
+*** [[file:nim-env.org][5.3 Nim]]
 
