@@ -1,0 +1,11 @@
+# pCloud
+
+## Introduction
+pCloud is a cloud storage provider.
+
+## Installation
+Download the binary from [the pCloud website](https://www.pcloud.com/download-free-online-cloud-file-storage.html). I like to organize my files so, download it into your home directory, maybe into a directory called `~/apps/pcloud`.
+
+## Setup
+Next we have to create a menu item. In KDE, we need to open KMenuEdit, so right mouse button on the application launcher menu, click Edit Applications... to start KMenuEdit. Now create a "New Item" and populate the fields. If you want a logo to be displayed download it, I downloaded the png from 
+[wikimedia](https://commons.wikimedia.org/wiki/File:Pcloud-logo.svg) and placed it in my pcloud directory. Save your changes, enjoy!
