@@ -1,10 +1,15 @@
-# Keybase 
+# Keybase
+
 ```bash
 #!/bin/bash
 ```
+
 ## Introduction
+
 Keybase is a program used to manage your identity with PGP. It also has a nifty encrypted and signed git component.
+
 ## Installing Keybase
+
 ```bash
 # ensure curl is installed
 sudo apt install curl

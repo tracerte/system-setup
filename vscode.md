@@ -5,6 +5,7 @@
 ```
 
 ## Introduction
+
 VScode has become a quick favorite of mine. While I love vim and emacs, the sheer amount of time spent configuring things can be a distraction.
 
 ## Installation

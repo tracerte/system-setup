@@ -5,7 +5,8 @@
 ```
 
 ## Introduction
-I often wish to try out new web browsers.
+
+I often wish to try out new web browsers for compatibility's sake.
 
 ## Firefox
 

@@ -3,14 +3,17 @@
 ```bash
 #!/bin/bash
 ```
+
 ## Introduction
 
 Like most people, my configuration files are source controlled. Time to install them.
 
 ## Shell Configuration Files
+
 My shell configuration files are in my `shell-config` git repo.
 
 Let's pull the repo.
+
 ```bash
   echo "Do you wish to clone the shell-config repo?"
   select yn in "Yes" "No"; do
@@ -22,8 +25,11 @@ Let's pull the repo.
   done
 
 ```
+
 Now we can enter the repo and Start Symlinking
+
 ## Bash
+
 ```bash
   echo "Do you wish to symlink the bashrc?"
   select yn in "Yes" "No"; do
@@ -38,7 +44,9 @@ Now we can enter the repo and Start Symlinking
       esac
   done
 ```
+
 ## ZSH
+
 ```bash
   echo "Do you wish to symlink the zshrc?"
   select yn in "Yes" "No"; do
