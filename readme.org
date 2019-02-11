@@ -15,7 +15,9 @@ Installing =tlp= and other battery saving utilities.
 *** [[file:thinkpad.org][1.4 Thinkpad Specific Software]]
 *** [[file:zsh.org][1.5 Installing ZSH and Oh My ZSH]]
 *** [[file:shell-config.org][1.6 Symlinking .zshrc and .bashrc]]
-** [[file:emacs.org][2. Building and Installing Emacs]]
+** 2. Text Editors
+*** [[file:emacs.org][2.1 Building and Installing Emacs]]
+*** [[file:vscode.org][2.2 Visual Studio Code]]
 ** 3. Printing and Scanning
 *** [[file:brother-dcp-7065dn.org][3.1 Brother DCP-7065DN]]
 ** 4. Applications
@@ -25,8 +27,8 @@ Save your eyes from blue light.
 *** [[file:keybase.org][4.3 Keybase]]
 *** [[file:pcloud.org][4.4 pCloud]]
 *** [[file:signal.org][4.5 Signal]]
+*** [[file:web-browsers.org][4.6 Web Browsers]]
 ** 5. Programming Environments
 *** [[file:bash-env.org][5.1 Shell Script]]
-*** [[file:python-env.org][5.2 Python]]
-*** [[file:nim-env.org][5.3 Nim]]
+*** [[file:rust-env.org][5.2 Rust]]
 

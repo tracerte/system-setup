@@ -1,0 +1,43 @@
+#+PROPERTY: header-args :tangle "./generated-scripts/neovim.sh"
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+The venerable vim(Neovim). Self explanatory.
+* Installation
+** Pre-reqs
+
+In order to use Python Modules install the dependencies for that.
+
+#+BEGIN_SRC bash
+sudo apt-get install python-dev python-pip python3-dev python3-pip
+#+END_SRC
+
+** Install Neovim
+
+#+BEGIN_SRC bash
+sudo apt-get update
+sudo apt-get install neovim
+#+END_SRC
+
+** Python Provider
+Follow the instructions once in nvim.
+
+=:help provider-python=
+
+Ultimately you will have to install the neovim package from pip
+
+#+BEGIN_SRC bash
+sudo pip3 install --upgrade neovim
+sudo pip2 install --upgrade neovim
+#+END_SRC
+
+** Make Neovim Your Preferred Choice
+#+BEGIN_SRC bash
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+#+END_SRC
