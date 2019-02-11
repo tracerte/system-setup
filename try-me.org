@@ -1,0 +1,12 @@
+#+PROPERTY: header-args :tangle "./generated-scripts/try-me.sh"
+
+#+BEGIN_SRC bash
+#!/bin/bash
+#+END_SRC
+* Introduction
+I am but a mere demo.
+
+#+BEGIN_SRC bash
+echo "Hello World"
+#+END_SRC
+

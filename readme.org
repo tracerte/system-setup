@@ -1,7 +1,28 @@
 * How to Use this Repo
 This repo is a set of literate shell scripts and some plain old org files used to provision my computers. Each file is written in org mode with Babel and can run as a script.
-* Tangling The Org Files
-We can generate the file by opening the file in emacs and typing =M-x org-babel-tangle= or using the key combination =C-c C-v t=
+* Tangling (Scriptifying) The Org Files
+** Disciples of The Church of Emacs
+Generate the file by opening the file in emacs and typing =M-x org-babel-tangle= or using the key combination =C-c C-v t=. Each generated scripted will appear in a =./generated-scripts= directory in the current working directory.
+** Other UNIXersists
+Since you probably do not have emacs installed, we can use the =sed= command to extricate and create =bash= files from =org= files.
+
+The following code snippet will first isolate the bash code blocks and then delete the fencing around them, outputting the result to the =stdout=.
+
+#+BEGIN_SRC sh
+$ sed -n '/^#+BEGIN_SRC bash/,/^#+END_SRC/ p' < try-me.org | sed '/^#+BEGIN_SRC bash/d' | sed '/^#+END_SRC/ d'
+#+END_SRC
+
+You can output the resulting =stdout= to a file like so:
+
+#+BEGIN_SRC sh
+$ sed -n '/^#+BEGIN_SRC bash/,/^#+END_SRC/ p' < try-me.org | sed '/^#+BEGIN_SRC bash/d' | sed '/^#+END_SRC/ d' > try-me.sh
+#+END_SRC
+
+Or you can direct the output directly to the bash interpreter, which will run the file as a script:
+
+#+BEGIN_SRC sh
+$ sed -n '/^#+BEGIN_SRC bash/,/^#+END_SRC/ p' < try-me.org | sed '/^#+BEGIN_SRC bash/d' | sed '/^#+END_SRC/ d' | bash
+#+END_SRC
 * Current Systems
 - Lenovo Thinkpad P50: Ubuntu 18.10 (Cosmic Cuttlefish)
 * Table of Contents and Basic Order of Execution
