@@ -26,7 +26,7 @@ sudo apt install clang cmake clang-format libclang-dev
 
 ### Install choosenim
 
-`choosenim` is a tool similar to =pyenv= which allows you to have multiple versions of nim installed on your computer and switch between them, fairly seamlessly.
+`choosenim` is a tool similar to `pyenv` which allows you to have multiple versions of nim installed on your computer and switch between them, fairly seamlessly.
 
 ```bash
 curl https://nim-lang.org/choosenim/init.sh -sSf | sh
